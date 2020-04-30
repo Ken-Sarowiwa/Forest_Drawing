@@ -1,11 +1,7 @@
 import turtle
-from utilities import draw_triangle
-from utilities import draw_circle
-from utilities import draw_rectangle
-from utilities import stamp_turtle
-from utilities import distance
-from utilities import save_state
-from utilities import restore_state
+
+from utilities import (distance, draw_circle, draw_rectangle, draw_triangle,
+                       restore_state, save_state, stamp_turtle)
 
 
 def main():
@@ -16,11 +12,11 @@ def main():
     distance()
     save_state()
     restore_state()
-    turtle.setup(window_width, window_height)
+    # turtle.setup(window_width, window_height)
     turtle.listen(handle_click())
 
 
-turtle.onscreenclick()
+# turtle.onscreenclick()
 
 
 def handle_click(x, y):
@@ -43,6 +39,13 @@ turtle.register_shape('bird',
 
 turtle.shape('bird')
 
-turtle.tiltangle(new_tilt_value)
+# turtle.tiltangle(new_tilt_value)
 
-main()
+# main()
+
+
+def my_function():
+    draw_rectangle(width=100, height=80)
+    
+
+my_function()
