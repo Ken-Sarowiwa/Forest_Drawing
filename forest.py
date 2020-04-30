@@ -12,7 +12,7 @@ def main():
     distance()
     save_state()
     restore_state()
-    # turtle.setup(window_width, window_height)
+    turtle.setup(800, 800)
     turtle.listen(handle_click())
 
 
@@ -41,11 +41,5 @@ turtle.shape('bird')
 
 # turtle.tiltangle(new_tilt_value)
 
-# main()
-
-
-def my_function():
-    draw_rectangle(width=100, height=80)
-    
-
-my_function()
+if __name__ == "__main__":
+    main()
