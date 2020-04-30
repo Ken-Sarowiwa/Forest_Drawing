@@ -1,4 +1,3 @@
-
 def draw_triangle(centre_x, centre_y, width, height, pen_color, fill_color):
     """
 
@@ -10,7 +9,8 @@ def draw_triangle(centre_x, centre_y, width, height, pen_color, fill_color):
     :param fill_color:
     """
 
-#draw rectangle
+
+# draw rectangle
 def draw_rectangle(centre_x, centre_y, width, height, pen_color, fill_color):
     """
 
@@ -22,7 +22,8 @@ def draw_rectangle(centre_x, centre_y, width, height, pen_color, fill_color):
     :param fill_color:
     """
 
-#draw circle
+
+# draw circle
 def draw_circle(centre_x, centre_y, radius, pen_color, fill_color):
     """
 
@@ -33,7 +34,8 @@ def draw_circle(centre_x, centre_y, radius, pen_color, fill_color):
     :param fill_color:
     """
 
-#stamp_turtle
+
+# stamp_turtle
 def stamp_turtle(centre_x, centre_y, color):
     """
 
@@ -42,11 +44,11 @@ def stamp_turtle(centre_x, centre_y, color):
     :param color:
     """
 
-#distance functions
-def distance(x1, y1, x2, y2):
 
- def save_state(centre_X, centre_y, pen_color, fill_color):
-     """
+# distance functions
+def distance(x1, y1, x2, y2):
+    def save_state(centre_X, centre_y, pen_color, fill_color):
+        """
      :param centre_X:
      :param centre_y:
      :param pen_color:
@@ -54,9 +56,9 @@ def distance(x1, y1, x2, y2):
 
      """
 
-#restore_state
+
+# restore_state
 def restore_state():
     """
 
     """
-

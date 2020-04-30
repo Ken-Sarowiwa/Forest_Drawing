@@ -9,7 +9,6 @@ from utilities import restore_state
 
 
 def main():
-    import turtle
     draw_triangle()
     draw_circle()
     draw_rectangle()
