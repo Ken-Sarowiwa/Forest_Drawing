@@ -7,11 +7,16 @@ from utilities import (distance, draw_circle, draw_rectangle, draw_triangle,
 turtle.setup(800, 800)
 
 def main():
-    draw_rectangle()
+    draw_rectangle() # house drawing area
     draw_triangle()
-    draw_circle()
+    
+    #  two circles 
+    # draw_circle(centre_x=0, centre_y=370) # tree circle
+    # draw_circle(centre_x=100, centre_y=370) # Bird circle
 
-    stamp_turtle()
+    draw_circle(centre_x=20, centre_y=320) # tree circle for testing
+    draw_circle(centre_x=80, centre_y=320) # Bird circle for testing
+
     # Tkinter main loop.
     turtle.getscreen()._root.mainloop() 
 
