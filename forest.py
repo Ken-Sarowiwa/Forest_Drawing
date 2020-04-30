@@ -4,16 +4,16 @@ from utilities import (distance, draw_circle, draw_rectangle, draw_triangle,
                        restore_state, save_state, stamp_turtle)
 
 
+turtle.setup(800, 800)
+
 def main():
+    draw_rectangle()
     draw_triangle()
     draw_circle()
-    draw_rectangle()
+
     stamp_turtle()
-    distance()
-    save_state()
-    restore_state()
-    turtle.setup(800, 800)
-    turtle.listen(handle_click())
+    # Tkinter main loop.
+    turtle.getscreen()._root.mainloop() 
 
 
 # turtle.onscreenclick()

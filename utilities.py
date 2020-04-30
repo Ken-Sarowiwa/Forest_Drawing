@@ -1,7 +1,8 @@
 import math
 import turtle
- 
-turtle.setup(800,800)
+
+
+
 my_turtle = turtle.Turtle()
 
 def draw_triangle(centre_x=0, centre_y=0, width=100, height=120, pen_color='black', fill_color='red'):
@@ -35,7 +36,7 @@ def draw_triangle(centre_x=0, centre_y=0, width=100, height=120, pen_color='blac
 
 
 # draw rectangle
-def draw_rectangle(centre_x=0, centre_y=0, width=700, height=700, pen_color='black', fill_color='red'):
+def draw_rectangle(centre_x=-400, centre_y=-400, width=700, height=700, pen_color='black', fill_color='red'):
     """
     drawing boundary
     :param centre_x:
@@ -101,6 +102,8 @@ def stamp_turtle(centre_x, centre_y, color):
     my_turtle.goto(centre_x,centre_y)
     my_turtle.down()
     
+    my_turtle.stamp()
+    
     save_state()
 
 
@@ -125,8 +128,7 @@ def save_state(centre_X=0, centre_y=0, pen_color=0, fill_color=0):
     position, pen color, fill color) in global variables
 
     """
-
-    turtle.getscreen()._root.mainloop() # Tkinter main loop
+    pass
 
 
 # restore_state
